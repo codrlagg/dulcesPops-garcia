@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* cambiosSobreEtiquetas */
+p {
+  font-size: 2rem;
+  color: #d90416;
+  line-height: 1.5;
+}
+
+p .dulcesPops {
+  font-family: 'Pacifico', cursive;
+  color: #d90416;
+}
+
+h2 {
+  font-size: 5rem;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  color: #F23064;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 3.5rem;
+  color: #F23064;
+  line-height: 2;
+}
+
+h4 {
+  font-size: 2rem;
+  color: #f28daf;
+}
+
+h6 {
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+footer {
+  background-image: url(../img/marmol1.jpg);
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.logo__giro {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.dulcesDelMes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30%, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(30%, 1fr));
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+}
+
+.dulcesDelMes__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content 30vw 1fr;
+      grid-template-rows: -webkit-max-content 30vw 1fr;
+      grid-template-rows: max-content 30vw 1fr;
+}
+
+.dulcesDelMes__items h2 {
+  font-size: 3.5vw;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.dulcesDelMes__items h2:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.dulcesDelMes__items__descripcion {
+  text-align: center;
+  font-size: 2rem;
+  color: #f2efdc;
+  background-color: #f28daf;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.dulcesDelMes__items__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+  height: 100%;
+}
+
+.dulcesDelMes__items__loMasVendido {
+  background: #db1200;
+  background: radial-gradient(circle, rgba(219, 18, 0, 0.588673) 29%, rgba(137, 0, 163, 0.751138) 93%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#db1200",endColorstr="#8900a3",GradientType=1);
+}
+
+.dulcesDelMes__items__loNuevo {
+  background: #e4b076;
+  background: radial-gradient(circle, rgba(228, 176, 118, 0.885592) 29%, #563c25 93%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4b076",endColorstr="#563c25",GradientType=1);
+}
+
+.dulcesDelMes__items__preventa {
+  background: #6ec9aa;
+  background: radial-gradient(circle, #6ec9aa 29%, #2a6eb7 93%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6ec9aa",endColorstr="#2a6eb7",GradientType=1);
+}
+
+.s2ys3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30%, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(30%, 1fr));
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+  padding: 10px;
+  margin: 5px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#f28daf), to(#f2efdc));
+  background-image: linear-gradient(to left, #f28daf, #f2efdc);
+}
+
+@media screen and (max-width: 736px) {
+  .s2ys3 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+
+.s2ys3 h3, .s2ys3 p {
+  margin: 10px;
+  text-align: center;
+}
+
+.s2ys3 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+  height: 40vh;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.s2ys3 img:hover {
+  -webkit-transform: rotateZ(15deg);
+          transform: rotateZ(15deg);
+}
+
+.seccion {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content 30vw 1fr;
+      grid-template-rows: -webkit-max-content 30vw 1fr;
+      grid-template-rows: max-content 30vw 1fr;
+}
+
+.centrado {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.ventaProductos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20%, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(20%, 1fr));
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  row-gap: 20px;
+}
+
+@media screen and (max-width: 736px) {
+  .ventaProductos {
+    -ms-grid-columns: (minmax(50%, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
+    height: 100%;
+    font-size: 3vw;
+  }
+}
+
+.ventaProductos__producto {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: max-content 20vw 1fr;
+      grid-template-rows: -webkit-max-content 20vw 1fr;
+      grid-template-rows: max-content 20vw 1fr;
+  padding: 2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.ventaProductos__producto img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+  height: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.ventaProductos__producto img:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.ventaProductos__producto h2 {
+  font-weight: lighter;
+  color: #f28daf;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.ventaProductos__producto button {
+  border-radius: 10px;
+  font-size: 1vw;
+  font-family: 'Montserrat';
+  font-weight: 900;
+  text-transform: uppercase;
+  background-color: #F23064;
+  color: #f2efdc;
+  padding: 2px;
+  border: none;
+  width: 50%;
+  margin: 0;
+}
+
+.ventaProductos__producto button:hover {
+  background-color: #f2efdc;
+  color: #F23064;
+}
+
+.ventaProductos__producto p {
+  padding: 5px;
+  text-align: center;
+}
+
+form {
+  color: #F23064;
+}
+
+legend {
+  font-family: 'Pacifico';
+  font-size: 3rem;
+  font-weight: lighter;
+  margin: 10px;
+}
+
+fieldset {
+  border-color: #00ada9;
+}
+
+.contactanos img {
+  height: 10vh;
+}
+
+#limp {
+  background-color: #F23064;
+  color: #f2efdc;
+  border-color: #F23064;
+}
+
+#env {
+  background-color: #F23064;
+  color: #f2efdc;
+  border-color: #F23064;
+}
+
+.textoForm {
+  font-size: 2rem;
+}
+
+.nav {
+  background-color: #F23064;
+}
+
+.nav__lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 5vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.nav__lista__item {
+  color: #f2efdc;
+  font-family: 'Pacifico', cursive;
+  font-size: 120%;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.nav__lista__item__iconoProd {
+  list-style: url("../img/iconoProductos.png") inside;
+}
+
+.nav__lista__item__iconoProm {
+  list-style: url("../img/iconoPromociones.png") inside;
+}
+
+.nav__lista__item__iconoSuc {
+  list-style: url("../img/iconoSucursales.png") inside;
+}
+
+.nav__lista__item__iconoNos {
+  list-style: url("../img/iconoNosotros.png") inside;
+}
+
+.sucursalCDMX {
+  background-image: url("../../img/CDMX.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.sucursalMonterrey {
+  background-image: url("../../img/Monterrey.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.sucursalMerida {
+  background-image: url("../../img/Merida.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.imgdim {
+  width: 100%;
+  height: 250px;
+}
+
+.nombreSucursal {
+  font-size: 3vw;
+  text-align: center;
+  color: #f2efdc;
+  font-weight: bolder;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: #f28daf;
+}
+/*# sourceMappingURL=main.css.map */

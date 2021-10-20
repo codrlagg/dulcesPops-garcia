@@ -1,0 +1,34 @@
+.nav{
+    background-color: $rosa2;
+    &__lista{
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        height: 5vh;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        &__item{
+            color:$blanco;
+            font-family: 'Pacifico', cursive;
+            font-size: 120%;
+            text-transform: uppercase;
+            display: inline-block;
+            &__iconoProd {
+                list-style: url("../img/iconoProductos.png") inside;
+            }
+            
+            &__iconoProm {
+                list-style: url("../img/iconoPromociones.png") inside;
+            }
+            
+            &__iconoSuc {
+                list-style: url("../img/iconoSucursales.png") inside;
+            }
+            
+            &__iconoNos {
+                list-style: url("../img/iconoNosotros.png") inside;
+            }
+        }
+    }
+}

@@ -1,0 +1,162 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+/* cambiosSobreEtiquetas */
+p {
+    font-size: 2rem;
+    color: $rosa1;
+    line-height: 1.5;
+    .dulcesPops{
+        font-family: 'Pacifico', cursive;
+        color: $rosa1;
+    }
+}
+h2 {
+    font-size: 5rem;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: $rosa2;
+    font-weight: lighter;
+    
+}
+h3 {
+    font-size: 3.5rem;
+    color: $rosa2;
+    line-height: 2;
+}
+h4 {
+    font-size: 2rem;
+    color: $rosa3;
+}
+h6 {
+    font-size: 1.5rem;
+    text-align: right;
+}
+footer {
+    background-image:url(../img/marmol1.jpg);
+}
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+@keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    &__giro{
+        -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+}
+.dulcesDelMes{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30%, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+    &__items{
+        display: grid;
+        grid-template-rows: max-content 30vw 1fr;
+        h2{
+            font-size: 3.5vw;
+            transition: transform .2s;
+        }
+        h2:hover{
+            transform: scale(1.2,1.2);
+        }
+        &__descripcion{
+            text-align: center;
+            font-size: 2rem;
+            color: $blanco;
+            background-color: $rosa3;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        &__img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            object-fit: cover;
+            width: auto;
+            height: 100%;
+        }
+        &__loMasVendido{
+            background: rgb(219,18,0);
+            background: -moz-radial-gradient(circle, rgba(219,18,0,0.5886729691876751) 29%, rgba(137,0,163,0.7511379551820728) 93%);
+            background: -webkit-radial-gradient(circle, rgba(219,18,0,0.5886729691876751) 29%, rgba(137,0,163,0.7511379551820728) 93%);
+            background: radial-gradient(circle, rgba(219,18,0,0.5886729691876751) 29%, rgba(137,0,163,0.7511379551820728) 93%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#db1200",endColorstr="#8900a3",GradientType=1);
+        }
+        &__loNuevo{
+            background: rgb(228,176,118);
+            background: -moz-radial-gradient(circle, rgba(228,176,118,0.8855917366946778) 29%, rgba(86,60,37,1) 93%);
+            background: -webkit-radial-gradient(circle, rgba(228,176,118,0.8855917366946778) 29%, rgba(86,60,37,1) 93%);
+            background: radial-gradient(circle, rgba(228,176,118,0.8855917366946778) 29%, rgba(86,60,37,1) 93%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4b076",endColorstr="#563c25",GradientType=1);
+        }
+        &__preventa{
+            background: rgb(110,201,170);
+            background: -moz-radial-gradient(circle, rgba(110,201,170,1) 29%, rgba(42,110,183,1) 93%);
+            background: -webkit-radial-gradient(circle, rgba(110,201,170,1) 29%, rgba(42,110,183,1) 93%);
+            background: radial-gradient(circle, rgba(110,201,170,1) 29%, rgba(42,110,183,1) 93%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6ec9aa",endColorstr="#2a6eb7",GradientType=1);
+        }
+    }
+}
+.s2ys3 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(30%, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 10px;
+    margin: 5px;
+    background-image: linear-gradient(to left,$rosa3,$blanco);
+    @include tablet{
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+    h3,p{
+        margin: 10px;
+        text-align: center;
+    }    
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+        width: auto;
+        height: 40vh;
+        transition: .2s;
+    }
+    img:hover{
+        transform: rotateZ(15deg);
+    }
+
+}
+.seccion{
+    display: grid;
+    grid-template-rows: max-content 30vw 1fr;
+}
+.centrado{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce nuestra tienda de dulces online">
+    <meta name="keywords" content="DULCES, TIENDA ONLINE, DULCES INTERNACIONALES, COMPRAR DULCES, CONTACTO, DUDAS">
+    <!-- fuentesGoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- hojaCss -->
+    <link rel="stylesheet" href="../estilos/main.css">
+       <title>Contacto para comprar dulces internacionales</title>
+   </head>
+   <body>
+       <!-- menuPrincipal -->
+       <div>
+           <header>
+               <!-- logo -->
+               <a href="../index.html"><img src="../img/bannerDulcesPops.png" alt="Dulces pops logo" class="logo giroLogo"></a>
+               <!-- navegacionMenu -->
+               <nav class="nav">
+                <ul class="nav__lista">
+                    <li class="nav__lista__item__iconoProd"><a class="nav__lista__item" href="productos.html">Productos</a></li>
+                    <li class="nav__lista__item__iconoProm"><a class="nav__lista__item" href="promociones.html">Promociones</a></li>
+                    <li class="nav__lista__item__iconoSuc"><a class="nav__lista__item" href="sucursales.html">Sucursales</a></li>
+                    <li class="nav__lista__item__iconoNos"><a class="nav__lista__item" href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+           </header>
+       </div>
+       <div class="contactanos">
+           <h2><img src="../img/contactoIzquierda.png" alt="" class="imagenTipoBanner">Contáctanos<img src="../img/contactoDerecha.png" alt="" class="imagenTipoBanner"></h2>
+       </div>
+        <form action="" method="GET">
+            <div class="textoForm"><!--Formulario de contacto-->
+                <fieldset>
+                    <legend>Tu dulce información</legend>
+                    <div><!--INPUT-->
+                        <label for="infoName">¿Cómo te gustaría que te digamos? (Puede ser por tu nombre, tu dulce favorito, quizás el color que más te gusta... tú eliges)</label>
+                        <input type="text" name="infoName" id="infoName" placeholder="Escribe aquí ☺" required>
+                    </div>
+                    <br>
+                    <div><!--RADIOBUTTONS-->
+                        <label for="infoSex">Sexo:</label>
+                        <br>
+                        <input type="radio" name="infoSex" id="infoSex" value="femenino" required>Femenino
+                        <input type="radio" name="infoSex" id="infoSex" value="masculino" required>Masculino
+                        <input type="radio" name="infoSex" id="infoSex" value="otro" required>Otro
+                        <input type="radio" name="infoSex" id="infoSex" value="prefiero no decirlo" required>Prefiero no decirlo
+                    </div>
+                    <br>
+                    <div><!--RADIOBUTTONS-->
+                        <label for="infoSabor">Mi sabor favorito es: </label>
+                        <br>
+                        <input type="radio" name="infoSabor" id="infoSabor" value="Dulce" required>Dulce
+                        <input type="radio" name="infoSabor" id="infoSabor" value="salado" required>Salado
+                        <input type="radio" name="infoSabor" id="infoSabor" value="Ácido" required>Ácido
+                        <input type="radio" name="infoSabor" id="infoSabor" value="Picante" required>Picante
+                    </div>
+                    <br>
+                    <div><!--MENU DESPLEGABLE-->
+                        <label for="infoPais">Quiero probar dulces provenientes del país de </label>
+                        <select name="infoPais" id="infoPais">
+                            <option value="mexico" disabled selected>.....</option>
+                            <option value="mexico">México</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="japon">Japón</option>
+                            <option value="korea">Korea</option>
+                            <option value="eua">Estados Unidos</option>
+                            <option value="suiza">Suiza</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div><!--INPUT-->
+                        <label for="infoMail">Dejanos tu correo para informarte cuando tengamos los dulces perfectos para ti:</label>
+                        <input type="text" name="infoMail" id="infoMail" placeholder="Escribe aquí ☺" required>
+                    </div>
+                    <br>
+                    <div><!--CHECKBOX-->
+                        <label for="infoLegal">Acepto términos:</label>
+                        <input type="checkbox" name="infoLegal" id="infoLegal" value="1">Si
+                        <input type="checkbox" name="infoLegal" id="infoLegal" value="1">No
+                    </div>
+                    <br>
+                    <div><!--BOTONES RESET Y ENVIAR-->
+                        <input type="reset" value="Limpiar" id="limp">
+                        <input type="submit" value="Enviar" id="env">
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+</body>
+</html>

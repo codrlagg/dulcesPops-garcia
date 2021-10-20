@@ -1,0 +1,25 @@
+@mixin tamañosImgs($width,$height) {
+    width: $width;
+    height: $height;
+}
+
+@each $sucursal in CDMX, Monterrey, Merida {
+    .sucursal#{$sucursal} {
+        background-image: url("../../img/#{$sucursal}.jpg");
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+    }
+}
+.imgdim{
+    @include tamañosImgs(100%, 1000px/4)
+}
+.nombreSucursal{
+    font-size: 3vw;
+    text-align: center;
+    color: $blanco;
+    font-weight: bolder;
+    align-content: center;
+    background-color: $rosa3;
+}

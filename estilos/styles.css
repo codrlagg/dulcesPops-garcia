@@ -1,0 +1,352 @@
+/*colores a usar
+    color: #D9072D;
+    color: #F23064;
+    color: #F28DA8;
+    color: #D9078F;
+    color: #F2EFDC;
+    color: #00ADA9;
+*/
+
+*{ /*Reset*/
+    margin: 0;
+    
+    padding:0;
+   
+}
+
+/* propiedaesHtml */
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*centrarImagenDelLogo*/
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+/* animacionParaLogotipo */
+.giroLogo {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+@keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+
+/*menu*/
+.nav {
+    background-color: #F23064;   
+}
+
+.ul {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: 5vh;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+li a {
+    color:#f2efdc;
+    font-family: 'Pacifico', cursive;
+    font-size: 120%;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/*iconosNav*/
+.iconoProd {
+    list-style: url("../img/iconoProductos.png") inside;
+}
+
+.iconoProm {
+    list-style: url("../img/iconoPromociones.png") inside;
+}
+
+.iconoSuc {
+    list-style: url("../img/iconoSucursales.png") inside;
+}
+
+.iconoNos {
+    list-style: url("../img/iconoNosotros.png") inside;
+}
+
+/* cambiosSobreEtiquetas */
+p {
+    font-size: 2rem;
+    color: #d9072d;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 5rem;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: #f23064;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 3.5rem;
+    color: #f23064;
+    line-height: 2;
+}
+
+h4 {
+    font-size: 2rem;
+    color: #f28daf;
+}
+
+h6 {
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+footer {
+    background-image:url(../img/marmol1.jpg);
+}
+
+/*nombreDeLaTiendaConFormatoDiferente*/
+.dulcesPops {
+    font-family: 'Pacifico', cursive;
+    color: #d90416;
+    /*font-size: 3rem;*/
+    
+}
+
+/* tablaDulcesDelMes */
+/* implementando3sParaLaTablaDeDulcesDelMes */
+.dulcesMesT {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30%, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.seccionT {
+    display: grid;
+    grid-template-rows: max-content 30vw 1fr;
+    
+}
+
+.seccionT h2 {
+    font-size: 3.5vw;
+    transition: transform .2s; /* animacionZoom */
+}
+
+.seccionT h2:hover {
+    transform: scale(1.2,1.2);
+}
+
+.seccionT img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+}
+
+.seccionT p{
+    text-align: center;
+    font-size: 2rem;
+    color: #f2efdc;
+    background-color: #f28daf;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/*seccionNosotros*/
+form {
+    color: #F23064;
+}
+
+legend {
+    font-family: 'Pacifico';
+    font-size: 3rem;
+    font-weight: lighter;
+    margin: 10px;
+}
+
+.contactanos img{
+    height: 10vh;
+}
+
+fieldset {
+    border-color: #00ADA9;
+}
+
+#limp {
+    background-color: #F23064;
+    color:#F2EFDC;
+    border-color: #F23064;
+}
+
+#env {
+    background-color: #F23064;
+    color:#F2EFDC;
+    border-color: #F23064;
+}
+
+.textoForm {
+    font-size: 2rem;
+}
+
+/*centrarImagenDelLogo*/
+.centrado {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+/*fondosParaProductosDelMes*/
+#loMasVendido {
+    background: rgb(219,18,0);
+    background: -moz-radial-gradient(circle, rgba(219,18,0,0.5886729691876751) 29%, rgba(137,0,163,0.7511379551820728) 93%);
+    background: -webkit-radial-gradient(circle, rgba(219,18,0,0.5886729691876751) 29%, rgba(137,0,163,0.7511379551820728) 93%);
+    background: radial-gradient(circle, rgba(219,18,0,0.5886729691876751) 29%, rgba(137,0,163,0.7511379551820728) 93%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#db1200",endColorstr="#8900a3",GradientType=1);
+}
+
+#loNuevo {
+    background: rgb(228,176,118);
+    background: -moz-radial-gradient(circle, rgba(228,176,118,0.8855917366946778) 29%, rgba(86,60,37,1) 93%);
+    background: -webkit-radial-gradient(circle, rgba(228,176,118,0.8855917366946778) 29%, rgba(86,60,37,1) 93%);
+    background: radial-gradient(circle, rgba(228,176,118,0.8855917366946778) 29%, rgba(86,60,37,1) 93%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4b076",endColorstr="#563c25",GradientType=1);
+}
+
+#preventa{
+    background: rgb(110,201,170);
+    background: -moz-radial-gradient(circle, rgba(110,201,170,1) 29%, rgba(42,110,183,1) 93%);
+    background: -webkit-radial-gradient(circle, rgba(110,201,170,1) 29%, rgba(42,110,183,1) 93%);
+    background: radial-gradient(circle, rgba(110,201,170,1) 29%, rgba(42,110,183,1) 93%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6ec9aa",endColorstr="#2a6eb7",GradientType=1);
+}
+
+/* seccionProductos */
+.ventaP {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(20%, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.productosT {
+    display: grid;
+    grid-template-rows: max-content 20vw 1fr;
+    padding: 2px;
+    align-items: center;
+    justify-items: center;
+}
+
+.productosT img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+    transition: .3s;
+}
+
+.productosT img:hover {
+    transform: scale(1.1,1.1);
+}
+
+.productosT p {
+    padding: 5px;
+    text-align: center;
+}
+
+.productosT h2 {
+    font-weight: lighter;
+    color: #f28daf;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.productosT button {
+    border-radius: 10px;
+    font-size: 1vw;
+    font-family: 'Montserrat';
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: #f23064;
+    color: #f2efdc;
+    padding: 2px;
+    border: none;
+    width: 50%;
+    margin: 0;
+}
+
+.productosT button:hover {
+    background-color: #f2efdc;
+    color: #F23064;
+}
+
+
+
+.s2ys3 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(30%, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 10px;
+    margin: 5px;
+    background-image: linear-gradient(to left,#f28daf,#f2efdc);
+}
+
+.s2ys3 h3, p {
+    margin: 10px;
+    text-align: center;
+}
+
+.s2ys3 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: auto;
+    height: 40vh;
+    transition: .2s;
+}
+
+.s2ys3 img:hover {
+    transform: rotateZ(15deg);
+}
+
+
+@media (max-width:768px) {
+    
+    body {
+        background-color: #f28daf;
+    }
+    .displayNone {
+        display: none;
+    }
+}

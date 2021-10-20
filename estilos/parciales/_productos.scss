@@ -1,0 +1,57 @@
+.ventaProductos{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(20%, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+    @include tablet{
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
+        height: 100%;
+        font-size: 3vw;
+    }
+    &__producto{
+        display: grid;
+        grid-template-rows: max-content 20vw 1fr;
+        padding: 2px;
+        align-items: center;
+        justify-items: center;
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            object-fit: cover;
+            width: auto;
+            height: 100%;
+            transition: .3s;
+        }
+        img:hover{
+            transform: scale(1.1,1.1);
+        }
+        h2{
+            font-weight: lighter;
+            color: $rosa3;
+            text-align: center;
+            font-size: 2vw;
+        }
+        button{
+            border-radius: 10px;
+            font-size: 1vw;
+            font-family: 'Montserrat';
+            font-weight: 900;
+            text-transform: uppercase;
+            background-color: $rosa2;
+            color: $blanco;
+            padding: 2px;
+            border: none;
+            width: 50%;
+            margin: 0;
+        }
+        button:hover{
+            background-color: $blanco;
+            color: $rosa2;
+        }
+        p{
+            padding: 5px;
+            text-align: center;
+        }
+    }
+}
