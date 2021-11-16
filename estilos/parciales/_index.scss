@@ -30,10 +30,15 @@ h4 {
     color: $rosa3;
 }
 h6 {
-    font-size: 1.5rem;
-    text-align: right;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
 }
 footer {
+    align-items: center;
+    color: $blanco;
+    font-family: 'Montserrat';
+    font-weight: 700;
     background-image:url(../img/marmol1.jpg);
 }
 @-webkit-keyframes scale-up-center {
@@ -159,4 +164,16 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10%, 1fr));
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+        width: auto;
+        height: 100%;
+    }
 }

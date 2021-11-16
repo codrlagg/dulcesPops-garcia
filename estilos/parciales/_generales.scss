@@ -1,5 +1,9 @@
 .nav{
-    background-color: blueviolet;
+    background-color: $rosa2;
+    a:hover{
+        background-color:$blanco;
+        color: $rosa2;
+    }
     &__lista{
         display: flex;
         flex-direction: row;
@@ -28,6 +32,9 @@
             
             &__iconoNos {
                 list-style: url("../img/iconoNosotros.png") inside;
+            }
+            &__iconoCompras {
+                list-style: url("../img/iconoCompras.png") inside;
             }
         }
     }

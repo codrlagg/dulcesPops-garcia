@@ -42,11 +42,18 @@ h4 {
 }
 
 h6 {
-  font-size: 1.5rem;
-  text-align: right;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f2efdc;
+  font-family: 'Montserrat';
+  font-weight: 700;
   background-image: url(../img/marmol1.jpg);
 }
 
@@ -211,6 +218,23 @@ footer {
   width: 70%;
 }
 
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10%, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(10%, 1fr));
+}
+
+.footer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+  height: 100%;
+}
+
 .ventaProductos {
   display: -ms-grid;
   display: grid;
@@ -330,6 +354,11 @@ fieldset {
   background-color: #F23064;
 }
 
+.nav a:hover {
+  background-color: #f2efdc;
+  color: #F23064;
+}
+
 .nav__lista {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,6 +401,10 @@ fieldset {
 
 .nav__lista__item__iconoNos {
   list-style: url("../img/iconoNosotros.png") inside;
+}
+
+.nav__lista__item__iconoCompras {
+  list-style: url("../img/iconoCompras.png") inside;
 }
 
 .sucursalCDMX {
