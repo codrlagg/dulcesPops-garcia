@@ -13,21 +13,18 @@ function eleccion(dulces) {
         default:
             return 0;
             break;
-        }
     }
+}
     
 alert("¿No sabes que dulce elegir?\n¡Yo te puedo recomendar algunos!");
 let entrada = prompt("¿Quieres que te ayude?\n 1) Si\n 2) No")
 console.log(entrada);
 // let entrada = prompt("¿No sabes que dulce elegir?¡Yo te puedo recomendar algunos!");
-while (entrada =1 ) {
-    if (entrada = 1) {
-        alert("ingresaste el numero 1");
+while (entrada == 1 ) {
+    if (entrada == 1) {
         let resultado = eleccion(prompt("Escribe el número del tipo de dulce te gusta más\n 1)Gomitas\n 2) Dulces picantes\n 3) Chocolates"));
         alert(resultado);
     }
-    else if (entrada != 1) {
-        alert("Espero que mi recomendación te haya servido");
-    }
-    entrada = prompt ("¿Quieres otra recomendación\n 1) Si\n 2) No");
-    }
+    entrada = prompt ("¿Te ayudo otras recomendaciones?\n 1) Si\n 2) No");
+}
+alert("¡Diviertete comprando dulces!");
